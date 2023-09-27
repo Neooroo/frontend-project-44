@@ -8,4 +8,4 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-console.log(`Question: ${getRandomInt(100)}`);
+console.log(`Question: ${getRandomInt(101)}`);

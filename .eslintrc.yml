@@ -1,8 +1,18 @@
 env:
   es2021: true
   node: true
-extends: eslint:recommended
+extends: 
+- "airbnb-base"
+- plugin:import/recommended
+plugins:
+  - import
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules: {}
+rules:
+  no-console: 0
+  import/extensions: 0
+
+
+
+

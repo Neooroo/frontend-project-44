@@ -21,10 +21,11 @@ for (const element of operations) {
   if (element === '-') {
     console.log(`question: ${coupleOne[0]} - ${coupleOne[1]}`);
     const answer = readlineSync.question('Answer: ');
-    if (coupleOne[0] - coupleOne[1] === answer) {
+    let number = coupleOne[0] - coupleOne[1];
+    if (number === answer) {
       console.log('correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was '${coupleOne[0] - coupleOne[1]}'`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was '${number}'`);
     }
   }
 }
